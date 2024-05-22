@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Practical6.6</title>
+</head>
+<BODY>
+<H1 align=center>Поштова форма</H1>
+<FORM NAME="mailer" METHOD="post" ACTION="" ENCTYPE= "text/plain"  onsubmit="document.mailer.action += mailtoandSubject">
+  <table border=2 align=center cellspacing=1 cellpadding=2 BgColor=Grey>
+    <tr><td><FONT size="2" color="White">Ім'я:</font></td>
+      <td>
+        <INPUT TYPE="text" NAME="Name" size="24" onchange="msg(this.form)">
+      </td>
+    </tr>
+
+    <tr><td><FONT size="2" color="White">Тема:</font></td>
+      <td>
+        <INPUT TYPE="text" NAME="Subject" size="24" onchange="msg(this.form)">
+      </td>
+    </tr>
+
+    <tr><td><FONT size="2" color="White">Повідомлення:</font></td>
+      <td>
+        <TEXTAREA NAME="Message" COLS=40 ROWS=6 onchange="msg(this.form)"></TEXTAREA>
+      </td>
+    </tr>
+    <tr><td colspan=2 align=center>
+      <INPUT TYPE = "submit" VALUE = "Відправити" onclick="checkIt()">
+      <INPUT TYPE=reset VALUE=" Очистити "></td>
+    </tr>
+  </table>
+</FORM>
+
+<SCRIPT href="js/style.js"></SCRIPT>
+</BODY>
+</html>
